@@ -1,16 +1,25 @@
-// import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// const App = () => {
-//   return <p>Hello React!</p>;
-// };
-
-// export default App;
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Budget from './components/Budget';
+import Remaining from './components/Remaining';
+import Spent from './components/Spent';
 const App = () => {
-	return <p>Hello Sparsh</p>;
+  return (
+    //<p>Hello Sparsh</p>
+    <div className='container mt-3'>
+      <h1>Budget Planner</h1>
+      <div className='col-sm'>
+      <Budget></Budget>
+      </div>
+      <div className='col-sm'>
+        <Remaining></Remaining>
+      </div>
+      <div className='col-sm'>
+        <Spent></Spent>
+      </div>
+    </div>
+
+  );
 };
 
 export default App;
