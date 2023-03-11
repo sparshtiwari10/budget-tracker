@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Budget from './components/Budget';
 import Remaining from './components/Remaining';
+import ExpenseList from './components/ExpenseList';
 import Spent from './components/Spent';
 const App = () => {
   return (
@@ -19,7 +20,11 @@ const App = () => {
       </div>
       <div className='mt-3'>
         <h1>Expenses</h1>
-        
+        <div className='row-mt-3'>
+        <div className='col-sm'>
+          <ExpenseList></ExpenseList>
+        </div>
+        </div>
       </div>
     </div>
 
