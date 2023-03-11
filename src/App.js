@@ -4,6 +4,7 @@ import Budget from './components/Budget';
 import Remaining from './components/Remaining';
 import ExpenseList from './components/ExpenseList';
 import Spent from './components/Spent';
+import AddExpenseForm from './components/AddExpenseForm';
 const App = () => {
   return (
     //<p>Hello Sparsh</p>
@@ -18,13 +19,21 @@ const App = () => {
       <div className='col-sm'>
         <Spent></Spent>
       </div>
-      <div className='mt-3'>
+      <div className='mt-4'>
         <h1>Expenses</h1>
         <div className='row-mt-3'>
-        <div className='col-sm'>
-          <ExpenseList></ExpenseList>
+          <div className='col-sm'>
+            <ExpenseList></ExpenseList>
+          </div>
         </div>
-        </div>
+      </div>
+      <div className='mt-4'>
+        <h1>Add Expense</h1>
+      </div>
+      <div className='row mt-3'>
+      <div className='col-sm'>
+        <AddExpenseForm/>
+      </div>
       </div>
     </div>
 
