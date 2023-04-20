@@ -31,10 +31,11 @@ const App = () => {
         <h1>Add Expense</h1>
       </div>
       <div className='row mt-3'>
-      <div className='col-sm'>
-        <AddExpenseForm/>
+        <div className='col-sm'>
+          <AddExpenseForm />
+        </div>
       </div>
-      </div>
+      
     </div>
 
   );
